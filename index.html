@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Injeção dos estilos CSS -->
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+
+    <!-- Injeção fontes usadas no projeto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rafael Bento</title>
+  </head>
+  <body>
+    <!-- Nav bar para navegar entre os conteúdos -->
+    <nav class="header">
+      <ul>
+        <li id="btn-about" class="active">Sobre mim</li>
+        <li id="btn-formation">Formação</li>
+        <li id="btn-projects">Projetos</li>
+        <li id="btn-contact">Contato</li>
+      </ul>
+    </nav>
+
+    <!-- criação conteudo sobre mim -->
+    <section id="about-me" class="visible">
+      <div class="about-container">
+        <img
+          src="https://github.com/rafael-rodrigues-bento.png"
+          alt="foto de perfil"
+        />
+        <h1>Olá, eu sou o Rafael Bento</h1>
+        <span
+          >Olá! Me chamo Rafael Rodrigues Bento, e sou apaixonado pelo mundo da
+          tecnologia. Atualmente, estou cursando Análise e Desenvolvimento de
+          Sistemas na Uninter, onde venho aprimorando meu conhecimento e
+          habilidades na área. <br /><br />Como Programador Full Stack na
+          empresa Oficina5, tenho o privilégio de trabalhar com tecnologias
+          modernas como Angular e NestJS. Essa experiência tem me proporcionado
+          um aprendizado contínuo e a oportunidade de contribuir para projetos
+          desafiadores e inovadores. <br /><br />Fora do horário de expediente,
+          sou um entusiasta dos jogos de PS5. Acredito que encontrar um
+          equilíbrio entre trabalho e lazer é essencial para o meu
+          desenvolvimento pessoal e profissional. <br /><br />Estou sempre em
+          busca de novos desafios e oportunidades para expandir meus horizontes
+          e contribuir para a comunidade de desenvolvimento de software. Seja
+          criando soluções inovadoras ou mergulhando em novos projetos, estou
+          pronto para enfrentar qualquer desafio que apareça no meu caminho.
+        </span>
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/rafael-rodrigues-bento-298114236/"
+            >
+              <img src="./assets/images/linkedin.svg" alt="icone linkedin" />
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/rafael-rodrigues-bento">
+              <img src="./assets/images/github.svg" alt="icone github" />
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.instagram.com/rafael.bento_/">
+              <img src="./assets/images/instagram.svg" alt="icone instagram" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- criação conteudo formação -->
+    <section id="formation" class="hidden">
+      <div class="formation-container">
+        <h2>Educação</h2>
+        <span>
+          <p>2023-atual</p>
+          <p>Uninter Centro Universitário Internacional</p>
+          <strong>Análise e Desenvolvimento de Sistemas</strong>
+        </span>
+        <h2>Cursos Livres</h2>
+        <span>
+          <p>Rocketseat - 12/2022 - 100hs</p>
+          <strong
+            ><a
+              target="_blank"
+              href="https://app.rocketseat.com.br/certificates/7dd3ec76-6102-4fbb-9fa0-a434ba0a4edf"
+              >Explorer</a
+            ></strong
+          >
+        </span>
+        <span>
+          <p>Alura - 2023-atual</p>
+          <strong
+            ><a
+              target="_blank"
+              href="https://cursos.alura.com.br/user/rafael-rodrigues-bento/fullCertificate/8491818236b88d3af888960ff37d7a13"
+              >Diversas formações dentro da plataforma</a
+            ></strong
+          >
+        </span>
+      </div>
+    </section>
+    <!-- criação conteudo projetos -->
+    <section id="projects" class="hidden">
+      <div class="projects-container">
+        <h2>Projetos</h2>
+        <span>
+          <h3>Food Explorer</h3>
+          <p>Aplicação de um restaurante online feita o front em react e o back em node.</p>
+          <a href="https://github.com/rafael-rodrigues-bento/foodExplorer-Front">Repositório</a>
+        </span>
+        <span>
+          <h3>Buscante</h3>
+          <p>Aplicação para buscar livros com a API do google, feita em angular</p>
+          <a href="https://github.com/rafael-rodrigues-bento/buscante">Repositório</a>
+        </span>
+        <span>
+          <h3>Ignite Feed</h3>
+          <p>Aplicação de uma rede social inspirada no facebook usando dados de usuarios do github, usando a api do github e issues para posts.</p>
+          <a href="https://github.com/rafael-rodrigues-bento/ignite-feed">Repositório</a>
+        </span>
+      </div>
+    </section>
+    <!-- criação conteudo contato -->
+    <section id="contact" class="hidden">
+      <div class="contact-container">
+        <h2>Entre em contato comigo</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="a4722560-9e0d-43c0-9759-687578b66e28"> 
+          <label class="input-title" for="name">Seu nome</label>
+          <input type="text" id="name" name="Nome" required>
+
+          <label class="input-title" for="email">Seu e-mail</label>
+          <input type="email" id="email" name="Email" required>
+
+          <label class="input-title" for="message">Sua mensagem</label>
+          <textarea  id="message" rows="10" name="Mensagem" required></textarea>
+
+          <button class="submit-button" type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
